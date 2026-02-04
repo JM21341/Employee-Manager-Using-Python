@@ -6,7 +6,7 @@ class Employee:
         self.age = age
         self.salary = salary
         self.tax = tax / 100
-        self.next = next
+        self.next = None
         Employee.num_of_emp += 1
     
 class Teacher(Employee):
