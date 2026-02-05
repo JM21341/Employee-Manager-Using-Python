@@ -34,10 +34,10 @@ class LinkedList:
     def __init__(self):
         self.head = None
     
-    def insert(self, data):
-        new_node = Node(data)
+    def insert(self, login_data, personal_data, emp_data):
+        new_node = Node(login_data, personal_data, emp_data)
         if self.head is None:
-            self_head = new_node
+            self.head = new_node
             return
         curr = self.head
         while curr.next:
